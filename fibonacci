@@ -1,0 +1,26 @@
+public class fibonacciseries {
+    public static void main(String[] args) {
+        int number=10;
+        fibonacci(number);
+    }
+   public static void fibonacci(int num )
+   {
+       int a =0,b=1;
+       int c=1;
+       if(num==1)
+           System.out.println("The "+num+" element of fibonacci "+a);
+       else if(num==2)
+           System.out.println("The "+num+" element of fibonacci "+b);
+       else
+       {
+           for(int i=3;i<=num;i++)
+           {
+               c=a+b;
+               a=b;
+               b=c;
+               if(num==i)
+                   System.out.println("The "+num+" element of fibonacci "+c);
+           }
+       }
+   }
+}
